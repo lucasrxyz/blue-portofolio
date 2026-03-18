@@ -105,7 +105,7 @@ const isDark = computed(function () {
 
 const navItems = [
   { to: '/', label: 'Accueil', icon: 'mdi-home-outline' },
-  { to: '/about', label: 'A&nbsp;propos', icon: 'mdi-account-outline' },
+  { to: '/about', label: 'À propos', icon: 'mdi-account-outline' },
   { to: '/projects', label: 'Projets', icon: 'mdi-briefcase-outline' },
   { to: '/contact', label: 'Contact', icon: 'mdi-email-outline' }
 ]

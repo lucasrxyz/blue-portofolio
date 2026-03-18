@@ -60,7 +60,6 @@
 
         <div class="text-center footer-copy">
           &copy; {{ currentYear }} Lucas Deudon &mdash; Fait avec
-          <v-icon size="14" color="secondary">mdi-heart</v-icon>
           Vue&nbsp;3 &amp; Vuetify
         </div>
       </v-container>
@@ -84,17 +83,17 @@ const links = [
 
 const socials = [
   {
-    href: 'https://github.com/',
+    href: 'https://github.com/lucasrxyz',
     icon: 'mdi-github',
     label: 'GitHub'
   },
   {
-    href: 'https://linkedin.com/',
+    href: 'https://www.linkedin.com/in/lucas-deudon-39041430a/',
     icon: 'mdi-linkedin',
     label: 'LinkedIn'
   },
   {
-    href: 'mailto:lucas.deudon@example.com',
+    href: 'mailto:lucas.deudon@gmail.com',
     icon: 'mdi-email',
     label: 'Email'
   }
