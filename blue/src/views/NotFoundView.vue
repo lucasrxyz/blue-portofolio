@@ -46,7 +46,7 @@
               prepend-icon="mdi-home-outline"
               elevation="0"
             >
-              Retour &agrave; l\'accueil
+              Retour &agrave; l'accueil
             </v-btn>
             <v-btn
               to="/projects"

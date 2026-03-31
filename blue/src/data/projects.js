@@ -5,7 +5,7 @@ const projects = [
   {
     id: 'repairstation',
     title: 'RepairStation',
-    subtitle: 'Application web de gestion de r&eacute;paration de roulements',
+    subtitle: 'Application full-stack de gestion de r&eacute;paration de roulements',
     description:
       'Application compl&egrave;te de digitalisation des services commerciaux et de r&eacute;paration de SKF Aeroengine France. ' +
       'L\'application couvre les processus <strong>channel, repair et emballage</strong> sur la cha&icirc;ne de r&eacute;paration de roulements pour moteurs d\'avions. ' +
@@ -18,7 +18,7 @@ const projects = [
     tech: ['Vue 3', 'Vuetify', 'VueX', 'Vue Router', 'C# .NET 9.0', 'ASP.NET Core', 'SQL Server (SSMS)', 'REST API'],
     category: 'Web Full-Stack',
     context: 'Mission alternance &ndash; SKF Aeroengine France',
-    period: '2024 &ndash; 2025',
+    period: '2024 - 2026',
     color: 'primary',
     icon: 'mdi-cog-sync',
     images: [

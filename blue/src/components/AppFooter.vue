@@ -17,7 +17,7 @@
           <!-- Gauche : nom et tagline -->
           <v-col cols="12" md="4" class="text-center text-md-left">
             <div class="font-display footer-name">Lucas Deudon</div>
-            <div class="footer-tagline">D&eacute;veloppeur Full-Stack &bull; BTS SIO SLAM</div>
+            <div class="footer-tagline">Développeur Full-Stack &bull; BTS SIO SLAM</div>
           </v-col>
 
           <!-- Centre : liens rapides -->
@@ -93,7 +93,7 @@ const socials = [
     label: 'LinkedIn'
   },
   {
-    href: 'mailto:lucas.deudon@gmail.com',
+    href: 'mailto:lucas.deudon04@gmail.com',
     icon: 'mdi-email',
     label: 'Email'
   }

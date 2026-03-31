@@ -64,7 +64,7 @@
   >
     <div class="drawer-header pa-6">
       <div class="font-display text-h6 gradient-text font-weight-bold">Lucas Deudon</div>
-      <div class="text-body-2 text-medium-emphasis mt-1">D&eacute;veloppeur Full-Stack</div>
+      <div class="text-body-2 text-medium-emphasis mt-1">Développeur Full-Stack</div>
     </div>
     <v-divider />
     <v-list nav class="pa-4">

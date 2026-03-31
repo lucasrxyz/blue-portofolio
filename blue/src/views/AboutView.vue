@@ -27,11 +27,6 @@
                     <v-icon size="88" color="primary">mdi-account-circle</v-icon>
                   </div>
                 </div>
-                <div class="avatar-badge">
-                  <v-chip color="success" size="small" prepend-icon="mdi-check-circle" class="font-display">
-                    Disponible
-                  </v-chip>
-                </div>
               </div>
               <div class="mt-6 d-flex flex-column ga-2">
                 <v-card v-for="info in quickInfos" :key="info.label" class="info-chip-card pa-3" rounded="xl" elevation="0">
@@ -49,26 +44,29 @@
               <h2 class="font-display text-h4 font-weight-bold mb-5 about-hello">Bonjour, je suis Lucas&nbsp;!</h2>
               <div class="about-text">
                 <p>
-                  J\'ai <strong>20&nbsp;ans</strong> et je suis en
+                  J'ai <strong>20&nbsp;ans</strong> et je suis en
                   <strong>2&egrave;me ann&eacute;e de BTS SIO option SLAM</strong>
                   en alternance chez <strong>SKF Aeroengine France</strong> &agrave; Valenciennes.
                   Mon objectif&nbsp;: devenir <strong>ing&eacute;nieur logiciel full-stack</strong>.
                 </p>
                 <p class="mt-4">
-                  Passionn&eacute; par le d&eacute;veloppement depuis plusieurs ann&eacute;es, j\'aime concevoir des
-                  applications compl&egrave;tes &mdash; du back-end en <strong>C# / .NET</strong> jusqu\'aux
-                  interfaces modernes en <strong>Vue&nbsp;3</strong>. Je suis &agrave; l\'aise sur des projets
-                  <strong>web</strong> comme sur des applications <strong>Windows</strong>.
+                  Je prévois, après la fin de mon BTS, d'intégrer l'école d'ingénieur <b>INSA Hauts-De-France</b>,
+                  afin d'atteindre mon objectif.
                 </p>
                 <p class="mt-4">
-                  En alternance chez SKF, j\'ai contribu&eacute; &agrave; la digitalisation de processus
-                  a&eacute;ronautiques, la gestion d\'impression d\'&eacute;tiquettes,
+                  Passionn&eacute; par le d&eacute;veloppement depuis plusieurs ann&eacute;es, j'aime concevoir des
+                  applications compl&egrave;tes : du back-end en <strong>C# / .NET</strong> jusqu'aux
+                  interfaces modernes en <strong>Vue&nbsp;3</strong>. Je suis &agrave; l'aise sur des projets
+                  <strong>web</strong> comme sur des applications <b>bureau</b> ou <strong>Windows</strong>.
+                </p>
+                <p class="mt-4">
+                  En alternance chez SKF, j'ai contribu&eacute; &agrave; la digitalisation de processus
+                  a&eacute;ronautiques, la gestion d'impression d'&eacute;tiquettes,
                   et la maintenance applicative avec des d&eacute;mandes utilisateurs terrain.
                 </p>
                 <p class="mt-4">
                   En dehors du travail, je d&eacute;veloppe des projets personnels comme
-                  <strong>Nestify</strong>, une application de streaming musical construite de A&nbsp;&agrave;&nbsp;Z
-                  avec Vue&nbsp;3 et les APIs YouTube / SoundCloud.
+                  <strong>Nestify</strong>, une application bureau de streaming musical utilisant les APIs YouTube / SoundCloud.
                 </p>
               </div>
               <div class="d-flex ga-3 mt-8 flex-wrap">
@@ -242,7 +240,7 @@ const quickInfos = [
   { icon: 'mdi-account-school-outline', label: 'BTS SIO SLAM &ndash; 2&egrave;me ann&eacute;e', color: 'primary' },
   { icon: 'mdi-domain',                 label: 'SKF Aeroengine France',              color: 'primary' },
   { icon: 'mdi-cake-variant-outline',   label: '20&nbsp;ans',                        color: 'secondary' },
-  { icon: 'mdi-target',                 label: 'Ing&eacute;nieur Full-Stack',        color: 'success' }
+  { icon: 'mdi-target',                 label: 'Futur Ing&eacute;nieur Full-Stack',        color: 'success' }
 ]
 
 const skillCategories = [

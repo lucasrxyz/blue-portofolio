@@ -28,8 +28,7 @@
     <div v-else class="no-images text-center py-6">
       <v-icon size="48" color="secondary" class="mb-2">mdi-image-multiple-outline</v-icon>
       <p class="text-body-2 text-medium-emphasis">
-        Les captures d\'&eacute;cran seront affich&eacute;es ici.<br />
-        Placez vos images dans <code>public/projects/{{ projectId }}/</code>
+        Les captures d'écran seront affichées ici.<br />
       </p>
     </div>
 
