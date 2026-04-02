@@ -18,7 +18,7 @@ const projects = [
     tech: ['Vue 3', 'Vuetify', 'VueX', 'Vue Router', 'C# .NET 9.0', 'ASP.NET Core', 'SQL Server (SSMS)', 'REST API'],
     category: 'Web Full-Stack',
     context: 'Mission alternance &ndash; SKF Aeroengine France',
-    period: '2024 - 2026',
+    period: '2025 - 2026',
     color: 'primary',
     icon: 'mdi-cog-sync',
     images: [
@@ -43,7 +43,7 @@ const projects = [
     tech: ['C#', '.NET 6.0', 'Windows Forms', 'MySQL'],
     category: 'Application bureau',
     context: 'Mission BTS SIO SLAM',
-    period: '2024',
+    period: '2025',
     color: 'secondary',
     icon: 'mdi-calendar-clock',
     images: [
@@ -69,7 +69,7 @@ const projects = [
     tech: ['Vue 3', 'Vuetify', 'Vue Router', 'YouTube API', 'SoundCloud API', 'JavaScript'],
     category: 'Application bureau',
     context: 'Projet personnel',
-    period: '2024',
+    period: '2026',
     color: 'accent',
     icon: 'mdi-music-box-multiple',
     images: [
@@ -96,7 +96,7 @@ const projects = [
     tech: ['C#', '.NET 9.0', 'WinUI', 'SQL Server (SSMS)', 'DataMax', 'Impression r&eacute;seau'],
     category: 'Application bureau',
     context: 'Maintenance &ndash; SKF Aeroengine France',
-    period: '2024 &ndash; 2025',
+    period: '2025 - 2026',
     color: 'deep-ocean',
     icon: 'mdi-printer-outline',
     images: [

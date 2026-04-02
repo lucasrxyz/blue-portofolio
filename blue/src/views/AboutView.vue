@@ -240,7 +240,7 @@ const quickInfos = [
   { icon: 'mdi-account-school-outline', label: 'BTS SIO SLAM &ndash; 2&egrave;me ann&eacute;e', color: 'primary' },
   { icon: 'mdi-domain',                 label: 'SKF Aeroengine France',              color: 'primary' },
   { icon: 'mdi-cake-variant-outline',   label: '20&nbsp;ans',                        color: 'secondary' },
-  { icon: 'mdi-target',                 label: 'Futur Ing&eacute;nieur Full-Stack',        color: 'success' }
+  { icon: 'mdi-target',                 label: 'Futur Ing&eacute;nieur logiciel Full-Stack',        color: 'success' }
 ]
 
 const skillCategories = [
@@ -254,7 +254,7 @@ const skillCategories = [
     name: 'Back-End',
     color: 'primary',
     icon: 'mdi-server-outline',
-    skills: ['C#', '.NET 6 / 9', 'ASP.NET Core', 'REST API', 'Windows Forms', 'WinUI']
+    skills: ['C#', '.NET 2.2 / 6 / 7 / 9', 'ASP.NET Core', 'REST API', 'Windows Forms', 'WinUI']
   },
   {
     name: 'Base de donn&eacute;es',
@@ -272,30 +272,48 @@ const skillCategories = [
 
 const formations = [
   {
-    period: '2023 &ndash; 2025',
+    period: '2024 - 2026',
     title: 'BTS SIO option SLAM',
     place: 'Lyc&eacute;e &ndash; Valenciennes',
     desc: 'Solutions Logicielles et Applications M&eacute;tiers &ndash; formation en alternance'
   },
   {
-    period: '2020 &ndash; 2023',
+    period: '2020 - 2023',
     title: 'Baccalaur&eacute;at g&eacute;n&eacute;ral',
     place: '',
-    desc: 'Sp&eacute;cialit&eacute;s Math&eacute;matiques &amp; NSI (Num&eacute;rique et Sciences Informatiques)'
+    desc: 'Sp&eacute;cialit&eacute;s Math&eacute;matiques &amp; LLCER Anglais(Langues, Littérature et Civilisation Étrangères et Régionales)'
   }
 ]
 
 const experiences = [
   {
-    period: '2023 &ndash; Aujourd\'hui',
-    title: 'D&eacute;veloppeur en alternance',
+    period: 'Septembre 2025 - Aujourd\'hui',
+    title: 'D&eacute;veloppeur full-stack en alternance',
     place: 'SKF Aeroengine France &ndash; Valenciennes',
     desc: 'D&eacute;veloppement et maintenance d\'applications industrielles&nbsp;: RepairStation, CEBEX&nbsp;V2, outils internes.'
   },
   {
-    period: '2024',
+    period: 'Mai 2025 - Juin 2025',
+    title: 'Stage de développeur full-stack',
+    place: 'SKF Aeroengine France &ndash; Valenciennes',
+    desc: 'D&eacute;veloppement et maintenance d\'applications &nbsp;: SECOM, Lettre d\'ordre.'
+  },
+  {
+    period: '2026',
+    title: 'Mission : Application mobile Dart, avec Flutter',
+    place: 'Projet AP BTS SIO SLAM',
+    desc: 'Description'
+  },
+  {
+    period: '2026',
+    title: 'Mission : API Rest Laravel',
+    place: 'Projet AP BTS SIO SLAM',
+    desc: 'Description'
+  },
+  {
+    period: '2025',
     title: 'Mission&nbsp;: HoroquartzRH',
-    place: 'Projet BTS SIO SLAM',
+    place: 'Projet AP BTS SIO SLAM',
     desc: 'Application Windows Forms de gestion des cong&eacute;s en C# .NET&nbsp;6.0 avec MySQL.'
   }
 ]
@@ -308,12 +326,12 @@ const softSkills = [
   },
   {
     icon: 'mdi-account-group-outline',
-    title: 'Travail en &eacute;quipe',
+    title: 'Travail en équipe',
     desc: 'Collaboration &eacute;troite avec les &eacute;quipes m&eacute;tier et techniques pour livrer des solutions adapt&eacute;es.'
   },
   {
     icon: 'mdi-chart-line',
-    title: 'Adaptabilit&eacute;',
+    title: 'Adaptabilité',
     desc: 'A l\'aise dans des environnements &eacute;volutifs, capable de monter en comp&eacute;tence rapidement sur de nouvelles technos.'
   },
   {

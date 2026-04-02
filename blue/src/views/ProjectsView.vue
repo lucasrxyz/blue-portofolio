@@ -35,8 +35,9 @@
             v-for="filter in filters"
             :key="filter.value"
             :color="activeFilter === filter.value ? 'primary' : 'default'"
-            :variant="activeFilter === filter.value ? 'elevated' : 'tonal'"
+            :variant="activeFilter === filter.value ? 'elevated' : 'outlined'"
             class="font-display filter-chip"
+            style="padding: 4px 30px 4px 30px"
             @click="activeFilter = filter.value"
             size="default"
           >
@@ -131,7 +132,7 @@
                   {{
                     expandedProject === project.id
                       ? 'R&eacute;duire'
-                      : 'D&eacute;tails &amp; captures d\'&eacute;cran'
+                      : "D&eacute;tails &amp; captures d'&eacute;cran"
                   }}
                 </v-btn>
               </v-card-text>
@@ -152,7 +153,7 @@
                     <!-- Galerie d'images -->
                     <h3 class="font-display text-subtitle-1 font-weight-bold mt-6 mb-3">
                       <v-icon size="18" color="secondary" class="mr-1">mdi-image-multiple-outline</v-icon>
-                      Captures d\'&eacute;cran
+                      Captures d'&eacute;cran
                     </h3>
                     <ImageGallery
                       :images="project.images"
@@ -188,7 +189,7 @@ const expandedProject = ref(null)
 const filters = [
   { value: 'all', label: 'Tous', icon: 'mdi-view-grid-outline' },
   { value: 'Web Full-Stack', label: 'Web Full-Stack', icon: 'mdi-web' },
-  { value: 'Application bureau', label: 'Application bureau', icon: 'mdi-monitor-outline' }
+  { value: 'Application bureau', label: 'Application bureau', icon: 'mdi-monitor' }
 ]
 
 const filteredProjects = computed(function () {

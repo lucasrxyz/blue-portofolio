@@ -66,7 +66,7 @@
                 <span class="font-display font-weight-bold" style="color:#2DC653">Disponible</span>
               </div>
               <p class="text-body-2" style="color:#4A6785; line-height:1.6">
-                Ouvert aux opportunit&eacute;s de stage, d\'alternance ou de collaborations pour
+                Ouvert aux opportunités d'alternance ou de collaborations pour
                 la p&eacute;riode &agrave; venir.
               </p>
             </v-card>
@@ -76,7 +76,7 @@
           <v-col cols="12" md="7">
             <v-card class="contact-form-card pa-6 pa-sm-8" rounded="xl" elevation="0">
               <h2 class="font-display text-h5 font-weight-bold mb-6" style="color:#023E8A">
-                M\'&eacute;crire
+                M'&eacute;crire
               </h2>
 
               <v-form ref="formRef" @submit.prevent="submitForm">
@@ -228,8 +228,8 @@ const contactInfos = [
   {
     icon: 'mdi-email-outline',
     label: 'Email',
-    value: 'lucas.deudon@example.com',
-    href: 'mailto:lucas.deudon@example.com',
+    value: 'lucas.deudon04@gmail.com',
+    href: 'mailto:lucas.deudon04@gmail.com',
     color: 'primary'
   },
   {
@@ -242,15 +242,15 @@ const contactInfos = [
   {
     icon: 'mdi-github',
     label: 'GitHub',
-    value: 'github.com/lucasdeudon',
-    href: 'https://github.com/',
+    value: 'github.com/lucasrxyz',
+    href: 'https://github.com/lucasrxyz',
     color: 'primary'
   },
   {
     icon: 'mdi-linkedin',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/lucasdeudon',
-    href: 'https://linkedin.com/',
+    value: 'linkedin.com/in/lucas-deudon-39041430a/',
+    href: 'https://www.linkedin.com/in/lucas-deudon-39041430a/',
     color: 'info'
   }
 ]
