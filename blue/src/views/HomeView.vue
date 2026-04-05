@@ -190,6 +190,7 @@
                 <v-btn
                   to="/projects"
                   variant="text"
+                  rounded="xl"
                   color="primary"
                   class="font-display"
                   append-icon="mdi-arrow-right"

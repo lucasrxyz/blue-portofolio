@@ -204,7 +204,7 @@ const form = reactive({
 })
 
 const subjects = [
-  'Opportunit&eacute; professionnelle',
+  'Opportunité professionnelle',
   'Stage ou alternance',
   'Collaboration sur un projet',
   'Question technique',

@@ -137,11 +137,11 @@
                 </v-btn>
               </v-card-text>
 
-              <!-- Section d&eacute;pliable : details + galerie -->
+              <!-- Section depliable : details + galerie -->
               <v-expand-transition>
                 <div v-if="expandedProject === project.id">
                   <v-divider class="mx-5" style="border-color: rgba(0,119,182,0.12)" />
-
+                
                   <div class="pa-5">
                     <!-- Description longue -->
                     <h3 class="font-display text-subtitle-1 font-weight-bold mb-3">
@@ -149,16 +149,55 @@
                       D&eacute;tails techniques
                     </h3>
                     <p class="project-long-desc font-body" v-html="project.longDescription" />
-
-                    <!-- Galerie d'images -->
-                    <h3 class="font-display text-subtitle-1 font-weight-bold mt-6 mb-3">
-                      <v-icon size="18" color="secondary" class="mr-1">mdi-image-multiple-outline</v-icon>
-                      Captures d'&eacute;cran
-                    </h3>
-                    <ImageGallery
-                      :images="project.images"
-                      :project-id="project.id"
-                    />
+                  
+                    <!-- CAS 1 : projet avec sections (ex: RepairStation) -->
+                    <template v-if="project.imageSections">
+                      <h3 class="font-display text-subtitle-1 font-weight-bold mt-6 mb-4">
+                        <v-icon size="18" color="secondary" class="mr-1">mdi-image-multiple-outline</v-icon>
+                        Captures d'&eacute;cran
+                      </h3>
+                    
+                      <!-- Note de confidentialite si presente -->
+                      <v-alert
+                        v-if="project.confidentialNote"
+                        type="warning"
+                        variant="tonal"
+                        rounded="lg"
+                        class="mb-5 font-body"
+                        prepend-icon="mdi-lock-outline"
+                        density="compact"
+                      >
+                        <span v-html="project.confidentialNote" />
+                      </v-alert>
+                    
+                      <!-- Sections d'images -->
+                      <div
+                        v-for="section in project.imageSections"
+                        :key="section.title"
+                        class="image-section mb-6"
+                      >
+                        <div class="image-section-title font-display mb-3">
+                          <v-icon size="16" color="secondary" class="mr-2">{{ section.icon }}</v-icon>
+                          <span v-html="section.title" />
+                        </div>
+                        <ImageGallery
+                          :images="section.images"
+                          :project-id="project.id"
+                        />
+                      </div>
+                    </template>
+                  
+                    <!-- CAS 2 : galerie simple -->
+                    <template v-else>
+                      <h3 class="font-display text-subtitle-1 font-weight-bold mt-6 mb-3">
+                        <v-icon size="18" color="secondary" class="mr-1">mdi-image-multiple-outline</v-icon>
+                        Captures d'&eacute;cran
+                      </h3>
+                      <ImageGallery
+                        :images="project.images"
+                        :project-id="project.id"
+                      />
+                    </template>
                   </div>
                 </div>
               </v-expand-transition>
@@ -187,9 +226,10 @@ const activeFilter = ref('all')
 const expandedProject = ref(null)
 
 const filters = [
-  { value: 'all', label: 'Tous', icon: 'mdi-view-grid-outline' },
-  { value: 'Web Full-Stack', label: 'Web Full-Stack', icon: 'mdi-web' },
-  { value: 'Application bureau', label: 'Application bureau', icon: 'mdi-monitor' }
+  { value: 'all',                  label: 'Tous',                icon: 'mdi-view-grid-outline' },
+  { value: 'Web Full-Stack',       label: 'Web Full-Stack',      icon: 'mdi-web' },
+  { value: 'Application bureau',   label: 'Application bureau',  icon: 'mdi-monitor' },
+  { value: 'Application mobile',   label: 'Application mobile',  icon: 'mdi-cellphone' }
 ]
 
 const filteredProjects = computed(function () {
@@ -237,11 +277,33 @@ function toggleProject(id) {
   color: #4A6785;
   font-size: 1rem;
 }
-
+.project-header-bg--gsb_flutter {
+  background: linear-gradient(135deg, #006D77, #17A398, #48CAE4);
+}
 .v-theme--aquaticDark .page-subtitle {
   color: rgba(202, 240, 248, 0.7);
 }
+/* Titre de section galerie */
+.image-section-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0077B6;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(0, 180, 216, 0.2);
+}
 
+.v-theme--aquaticDark .image-section-title {
+  color: #48CAE4;
+  border-bottom-color: rgba(72, 202, 228, 0.2);
+}
+
+.image-section:last-child {
+  margin-bottom: 0 !important;
+}
 .section-underline {
   width: 60px;
   height: 4px;

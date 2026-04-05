@@ -278,6 +278,18 @@ const formations = [
     desc: 'Solutions Logicielles et Applications M&eacute;tiers &ndash; formation en alternance'
   },
   {
+    period: 'Oct. 2023 - Jui. 2024',
+    title: 'BUT1 Informatique',
+    place: 'IUT de Maubeuge, UPHF',
+    desc: 'BUT Informatique générale, formation initiale.'
+  },
+  {
+    period: 'Sep. 2023 - Oct. 2023',
+    title: 'Licence Informatique L1',
+    place: 'INSA Hauts-De-France',
+    desc: 'Licence informatique générale, réorientation en milieu d\'Octobre'
+  },
+  {
     period: '2020 - 2023',
     title: 'Baccalaur&eacute;at g&eacute;n&eacute;ral',
     place: '',

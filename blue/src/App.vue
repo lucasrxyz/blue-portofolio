@@ -12,7 +12,7 @@
   </v-app>
 </template>
 
-<script setup>
+<script setup>k
 import { ref } from 'vue'
 import AppNavbar from '@/components/AppNavbar.vue'
 import AppFooter from '@/components/AppFooter.vue'
