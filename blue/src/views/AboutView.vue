@@ -73,7 +73,14 @@
                 <v-btn to="/projects" color="primary" class="font-display" prepend-icon="mdi-briefcase-outline" elevation="0">
                   Mes projets
                 </v-btn>
-                <v-btn href="/cv-lucas-deudon.pdf" target="_blank" color="secondary" variant="outlined" class="font-display" prepend-icon="mdi-file-account-outline">
+                <v-btn
+                  href="/cv/cv-lucas-deudon.pdf"
+                  target="_blank"
+                  color="secondary"
+                  variant="outlined"
+                  class="font-display"
+                  prepend-icon="mdi-file-account-outline"
+                >
                   T&eacute;l&eacute;charger le CV
                 </v-btn>
               </div>
@@ -227,7 +234,50 @@
         </v-row>
       </v-container>
     </section>
-
+    <!-- CV -->
+    <section class="section-spacing" style="background: rgba(0,119,182,0.04)">
+      <v-container>
+        <SectionReveal>
+          <div class="text-center mb-8">
+            <h2 class="section-title font-display">Mon CV</h2>
+            <div class="section-underline mx-auto mt-3" />
+          </div>
+        </SectionReveal>
+      
+        <SectionReveal :delay="100">
+          <v-card rounded="xl" elevation="0" class="cv-card pa-4">
+            <iframe
+              src="/cv/cv-lucas-deudon.pdf"
+              class="cv-iframe"
+              frameborder="0"
+              title="CV Lucas Deudon"
+            />
+            <div class="text-center mt-4 d-flex justify-center ga-3 flex-wrap">
+              <v-btn
+                href="/cv/cv-lucas-deudon.pdf"
+                target="_blank"
+                color="primary"
+                variant="tonal"
+                class="font-display"
+                prepend-icon="mdi-open-in-new"
+              >
+                Ouvrir en plein &eacute;cran
+              </v-btn>
+              <v-btn
+                href="/cv/cv-lucas-deudon.pdf"
+                download="CV-Lucas-Deudon.pdf"
+                color="secondary"
+                variant="outlined"
+                class="font-display"
+                prepend-icon="mdi-download-outline"
+              >
+                T&eacute;l&eacute;charger
+              </v-btn>
+            </div>
+          </v-card>
+        </SectionReveal>
+      </v-container>
+    </section>
   </div>
 </template>
 
@@ -400,7 +450,26 @@ const softSkills = [
 
 /* Avatar */
 .avatar-wrapper { position: relative; display: inline-block; }
+/* CV */
+.cv-card {
+  border: 1px solid rgba(0, 119, 182, 0.12) !important;
+}
 
+.cv-iframe {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  border-radius: 12px;
+  display: block;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .cv-iframe {
+    height: 60vh;
+    min-height: 400px;
+  }
+}
 .avatar-ring {
   width: 180px;
   height: 180px;
