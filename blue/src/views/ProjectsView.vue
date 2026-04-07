@@ -98,6 +98,9 @@
                   </v-chip>
                 </div>
 
+                <p class="project-subtitle font-body mb-3">Pourquoi ce projet?</p>
+                <p class="project-desc font-body" v-html="project.besoin" />
+
                 <p class="project-subtitle font-body mb-3" v-html="project.subtitle" />
                 <p class="project-desc font-body" v-html="project.description" />
 
@@ -149,7 +152,13 @@
                       D&eacute;tails techniques
                     </h3>
                     <p class="project-long-desc font-body" v-html="project.longDescription" />
-                  
+
+                    <h3 class="font-display text-subtitle-1 font-weight-bold mb-3">
+                        <v-icon size="18" color="primary" class="mr-1">mdi-timeline</v-icon>
+                        Versionning et collaboratif
+                    </h3>
+                    <p class="project-long-desc font-body" v-html="project.more" />
+
                     <!-- CAS 1 : projet avec sections (ex: RepairStation) -->
                     <template v-if="project.imageSections">
                       <h3 class="font-display text-subtitle-1 font-weight-bold mt-6 mb-4">

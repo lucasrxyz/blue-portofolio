@@ -90,6 +90,99 @@
       </v-container>
     </section>
 
+    <!-- SKF AEROENGINE FRANCE -->
+    <section class="section-spacing">
+      <v-container>
+        <v-row align="center" ga="8">
+        
+          <!-- Logo -->
+          <v-col cols="12" md="3" class="text-center">
+            <SectionReveal direction="scale">
+              <div class="skf-logo-wrapper">
+                <img
+                  src="/skf-logo.png"
+                  alt="Logo SKF Aeroengine France"
+                  class="skf-logo rounded-xl"
+                />
+              </div>
+            </SectionReveal>
+          </v-col>
+        
+          <!-- Description -->
+          <v-col cols="12" md="9">
+            <SectionReveal :delay="100" direction="left">
+              <div class="d-flex align-center ga-3 mb-4">
+                <v-chip color="primary" variant="tonal" size="small" prepend-icon="mdi-domain" class="font-display">
+                  Mon entreprise d'alternance
+                </v-chip>
+              </div>
+              <h2 class="font-display text-h4 font-weight-bold mb-5 about-hello">
+                SKF Aeroengine France
+              </h2>
+              <div class="about-text">
+                <p>
+                  <strong>SKF</strong> est un groupe su&eacute;dois fond&eacute; en <strong>1907</strong>, leader mondial
+                  dans la fabrication de <strong>roulements, joints d'&eacute;tanch&eacute;it&eacute;,
+                  syst&egrave;mes de lubrification et solutions de maintenance</strong>.
+                  Pr&eacute;sent dans plus de <strong>130&nbsp;pays</strong>, SKF emploie environ
+                  <strong>40&nbsp;000&nbsp;personnes</strong> &agrave; travers le monde.
+                  Un fait marquant de son histoire&nbsp;: les roulements SKF ont &eacute;t&eacute; embarqu&eacute;s
+                  &agrave; bord de la mission <strong>Apollo 11</strong> de la NASA en 1969, ce qui en fait une fierté
+                  pour moi de collaborer avec l'entreprise n&deg;1 mondiale du roulement à bille et rouleau.
+                </p>
+                <p class="mt-4">
+                  <strong>SKF Aeroengine France</strong>, bas&eacute;e &agrave; <strong>Valenciennes</strong>,
+                  est sp&eacute;cialis&eacute;e dans la <strong>r&eacute;paration et la r&eacute;vision de roulements
+                  pour moteurs d'avions</strong>. L'usine intervient sur des pi&egrave;ces critiques
+                  destin&eacute;es aux plus grands motoristes a&eacute;ronautiques mondiaux.
+                </p>
+                <p class="mt-4">
+                  C'est dans ce contexte industriel exigeant que j'effectue mon
+                  <strong>alternance depuis septembre&nbsp;2025</strong>, en collaborant avec
+                  de nombreux services de l'entreprise&nbsp;:
+                </p>
+                <ul class="skf-services-list mt-3">
+                  <li>
+                    <strong>Services commerciaux &amp; ADV</strong> (Adjoints des Ventes) &mdash;
+                    gestion des commandes, suivi des RMAs, création des devis et des bons de livraison
+                  </li>
+                  <li>
+                    <strong>Service Repair</strong> &mdash;
+                    digitalisation du processus de r&eacute;paration de roulements via l'application RepairStation
+                  </li>
+                  <li>
+                    <strong>Channels d'approvisionnement</strong> &mdash;
+                    gestion des flux entrants de pi&egrave;ces en attente de r&eacute;paration qu'on apelle les P/N
+                  </li>
+                  <li>
+                    <strong>Usine &amp; Montage</strong> &mdash;
+                    collaboration avec les op&eacute;rateurs terrain pour adapter les outils num&eacute;riques
+                    aux r&eacute;alit&eacute;s de la production
+                  </li>
+                  <li>
+                    <strong>Exp&eacute;dition/Emballage</strong> &mdash;
+                    maintenance de l'application CEBEX&nbsp;V2 utilis&eacute;e pour l'impression
+                    des &eacute;tiquettes d'exp&eacute;dition des roulements r&eacute;par&eacute;s (RMAs) et/ou
+                    des roulements neufs prêts à l'expedition.
+                  </li>
+                </ul>
+              </div>
+            
+              <!-- Badges -->
+              <div class="d-flex flex-wrap ga-2 mt-6">
+                <v-chip size="small" color="primary"   variant="tonal" prepend-icon="mdi-airplane-cog"        class="font-display">A&eacute;ronautique</v-chip>
+                <v-chip size="small" color="secondary" variant="tonal" prepend-icon="mdi-cog-outline"         class="font-display">R&eacute;paration de roulements</v-chip>
+                <v-chip size="small" color="success"   variant="tonal" prepend-icon="mdi-map-marker-outline"  class="font-display">Valenciennes, France</v-chip>
+                <v-chip size="small" color="warning"   variant="tonal" prepend-icon="mdi-earth"               class="font-display">130+ pays</v-chip>
+                <v-chip size="small" color="info"      variant="tonal" prepend-icon="mdi-account-group"       class="font-display">~40&nbsp;000 employ&eacute;s</v-chip>
+              </div>
+            </SectionReveal>
+          </v-col>
+        
+        </v-row>
+      </v-container>
+    </section>
+
     <!-- BARRES DE COMPETENCES -->
     <section class="section-spacing" style="background: rgba(0,119,182,0.04)">
       <v-container>
@@ -364,13 +457,13 @@ const experiences = [
     period: '2026',
     title: 'Mission : Application mobile Dart, avec Flutter',
     place: 'Projet AP BTS SIO SLAM',
-    desc: 'Description'
+    desc: 'Création d\'une application mobile de consultation des praticiens avec possiblité d\'évaluer les praticien ou attribuer des commentaires.'
   },
   {
     period: '2026',
     title: 'Mission : API Rest Laravel',
     place: 'Projet AP BTS SIO SLAM',
-    desc: 'Description'
+    desc: 'API Rest qui a pour but de faire une gestion des salaires par praticiens'
   },
   {
     period: '2025',
@@ -415,6 +508,36 @@ const softSkills = [
 </script>
 
 <style scoped>
+/* SKF Logo */
+.skf-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: white;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 119, 182, 0.12);
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.08);
+  transition: transform var(--transition-default), box-shadow var(--transition-default);
+}
+
+.skf-logo-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 119, 182, 0.15);
+}
+
+.v-theme--aquaticDark .skf-logo-wrapper {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(72, 202, 228, 0.15);
+}
+
+.skf-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 .page-header {
   padding-top: 120px;
   padding-bottom: 60px;

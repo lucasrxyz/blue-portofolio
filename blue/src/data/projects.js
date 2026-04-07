@@ -10,6 +10,10 @@ const projects = [
       'Application compl&egrave;te de digitalisation des services commerciaux et de r&eacute;paration de SKF Aeroengine France. ' +
       'L\'application couvre les processus <strong>channel, repair et emballage</strong> sur la cha&icirc;ne de r&eacute;paration de roulements pour moteurs d\'avions. ' +
       'D&eacute;ploy&eacute;e sur un serveur intranet, accessible uniquement sur le site de Valenciennes via un lien d&eacute;di&eacute;.',
+    besoin: 'Cette application a été demandé par les ADV et la station de Reparation, dans l\'usine, pour ' + 
+    'digitaliser un tout nouveau processus de réparation des roulements, pour un client spécial, puisque le processus actuel ne se fesait que sur papier.',
+    more: 'Versionning de l\'application via Azure DevOps. Gestion des demandes utilisateurs et des tickets, sur Jira.' +
+    'Je suis le seul sur le projet donc le Azure DevOps sert simplement pour versionner l\'application et gérer les pipelines, pas de collaboration.',
     longDescription:
       'Front-end en <strong>Vue&nbsp;3</strong> avec Vuetify, VueX et Vue-Router. ' +
       'Back-end en <strong>C#&nbsp;.NET&nbsp;9.0 LTS</strong> avec ASP.NET Core pour l\'API REST. ' +
@@ -136,9 +140,64 @@ const projects = [
     ]
   },
   {
+    id: 'cebex',
+    title: 'CEBEX V2',
+    subtitle: 'Application d\'impression d\'&eacute;tiquettes d\'exp&eacute;dition',
+    besoin: 'Cette application, lorsque qu\'elle m\'a été confiée, était déjà déployée et en production. Cependant, celle-ci étant rempli' + 
+    'de bug car les demandes utilisateurs étaient traitées au cas par cas, je suis responsable de cette application et assure la maintenance et ' +
+    'la mise à jour du code, en parallèlle avec Repair!',
+    more: 'Versionning de l\'application via Azure DevOps. Gestion des demandes utilisateurs et des tickets, sur Jira.' +
+    'Je suis le seul sur le projet donc le Azure DevOps sert simplement pour versionner l\'application, pas de collaboration.',
+    description:
+      'Application Windows d&eacute;di&eacute;e &agrave; l\'impression des &eacute;tiquettes d\'exp&eacute;dition pour les roulements destin&eacute;s aux entreprises clientes. ' +
+      'Interface connect&eacute;e aux <strong>imprimantes sp&eacute;cialis&eacute;es</strong> du r&eacute;seau SKF Valenciennes, ' +
+      'avec des &eacute;tiquettes cod&eacute;es en <strong>langage DataMax</strong>.',
+    longDescription:
+      'D&eacute;velopp&eacute;e en <strong>C#&nbsp;.NET&nbsp;9.0</strong> avec WinUI. ' +
+      'Connexion &agrave; un <strong>serveur SQL SSMS</strong> h&eacute;bergeant la base de donn&eacute;es. ' +
+      'Impression via des imprimantes r&eacute;seau cod&eacute;es en <strong>DataMax</strong>. ' +
+      'Ma mission comprend la <strong>maintenance</strong>, la <strong>s&eacute;curisation</strong> de l\'application ' +
+      'et la r&eacute;ponse aux <strong>demandes utilisateurs</strong> (corrections de bugs, nouvelles fonctionnalit&eacute;s). ',
+    tech: ['C#', '.NET 9.0', 'WinUI', 'SQL Server (SSMS)', 'DataMax', 'Impression r&eacute;seau'],
+    category: 'Application bureau',
+    context: 'Maintenance &ndash; SKF Aeroengine France',
+    period: '2025 - 2026',
+    color: 'deep-ocean',
+    icon: 'mdi-printer-outline',
+    featured: false,
+    confidentialNote: 'Le mod&egrave;le complet de la base de donn&eacute;es ne peut pas &ecirc;tre divulgu&eacute; pour des raisons de confidentialit&eacute; avec SKF Aeroengine France.',
+    imageSections: [
+      {
+        title: 'Interface principale',
+        icon: 'mdi-dashboard',
+        images: [
+          '/projects/cebexv2/cebex_empty.png',
+          '/projects/cebexv2/cebex_of_rempli_censored.png'
+        ]
+      },
+      {
+        title: 'Gestion des erreurs',
+        icon: 'mdi-alert-circle-outline',
+        images: [
+          '/projects/cebexv2/dialog_erreur.png'
+        ]
+      },
+      {
+        title: 'Extraits de code',
+        icon: 'mdi-code-braces',
+        images: [
+          '/projects/cebexv2/snippet/fonction_of_ou_rma.png'
+        ]
+      }
+    ]
+  },
+  {
     id: 'horoquartzrh',
     title: 'GSB Congés C#',
     subtitle: 'Application Windows de gestion des cong&eacute;s',
+    besoin: 'Il a été demandé par notre responsable (contexte de l\'AP), de créer une application C# avec interface intégré permettant' +
+    'd\'administrer et digitaliser la gestion de congés des praticiens, avec des fonctionallités spécifiques.',
+    more: "Versionning de l'application sur GitHub, gestion des demandes et besoin sur Trello.",
     description:
       'Application Windows Forms de gestion des cong&eacute;s avec deux modes d\'utilisation : ' +
       'un <strong>mode employ&eacute;</strong> pour soumettre des demandes de cong&eacute;s et un <strong>mode administrateur</strong> ' +
@@ -183,6 +242,9 @@ const projects = [
     id: 'gsb_flutter',
     title: 'GSB Praticien',
     subtitle: 'Application mobile de recherche et notation de praticiens',
+    besoin: 'Notre responsable, dans le contexte de l\'AP, nous a demandé la création d\'une application mobile permettant d\'avoir les notes' + 
+    'de chaque praticien et d\'avoir la possibilité d\'évaluer et commenter un praticien',
+    more: "Versionning de l'application sur GitHub, gestion des demandes et besoin sur Trello.",
     description:
       'Application mobile de gestion et consultation de praticiens m&eacute;dicaux. ' +
       'Permet de <strong>rechercher des praticiens</strong> avec des filtres avanc&eacute;s, ' +
@@ -240,6 +302,12 @@ const projects = [
     id: 'nestify',
     title: 'Nestify',
     subtitle: 'Lecteur de musique avec streaming YouTube &amp; SoundCloud',
+    besoin: 'Le besoin pour cette application était d\'offrir aux utilisateurs une manière de streamer tout les musiques souhaitées' + 
+    'sur une application simple et ergonomique, sans la moindre pub, qui est le soucis majeur avec les applications de streaming gratuites.',
+    more: "Versionning de l'application sur <b>GitHub</b>. En ce qui concerne le collaboratif, il n'y a pas eu de gestion de projets. Le repository étant <b>publique</b>" + 
+    ", il y a des fork pour <b>ajouter ou fixer</b> des fonctionalités, proposé par des volontaires. Gestion des demandes sur un <b>serveur privé</b> là" +
+    "ou les utilisateurs peuvent faire part " +
+    "de leur <b>éxperience utilisateur</b> et <b>signaler</b> des bugs ou <b>proposer des améliorations.</b>",
     description:
       'Application de bureau compl&egrave;te d&eacute;di&eacute;e &agrave; la gestion et l\'&eacute;coute de musique. ' +
       'Nestify <strong>stream les pistes directement depuis YouTube et SoundCloud</strong> via leurs APIs respectives, ' +
@@ -297,55 +365,7 @@ const projects = [
       }
     ]
   },
-  {
-    id: 'cebex',
-    title: 'CEBEX V2',
-    subtitle: 'Application d\'impression d\'&eacute;tiquettes d\'exp&eacute;dition',
-    description:
-      'Application Windows d&eacute;di&eacute;e &agrave; l\'impression des &eacute;tiquettes d\'exp&eacute;dition pour les roulements destin&eacute;s aux entreprises clientes. ' +
-      'Interface connect&eacute;e aux <strong>imprimantes sp&eacute;cialis&eacute;es</strong> du r&eacute;seau SKF Valenciennes, ' +
-      'avec des &eacute;tiquettes cod&eacute;es en <strong>langage DataMax</strong>.',
-    longDescription:
-      'D&eacute;velopp&eacute;e en <strong>C#&nbsp;.NET&nbsp;9.0</strong> avec WinUI. ' +
-      'Connexion &agrave; un <strong>serveur SQL SSMS</strong> h&eacute;bergeant la base de donn&eacute;es. ' +
-      'Impression via des imprimantes r&eacute;seau cod&eacute;es en <strong>DataMax</strong>. ' +
-      'Ma mission comprend la <strong>maintenance</strong>, la <strong>s&eacute;curisation</strong> de l\'application ' +
-      'et la r&eacute;ponse aux <strong>demandes utilisateurs</strong> (corrections de bugs, nouvelles fonctionnalit&eacute;s). ' +
-      '<br/><br/><em><v-icon size="14">mdi-lock-outline</v-icon> Pour des raisons de confidentialit&eacute; avec SKF Aeroengine France, ' +
-      'le mod&egrave;le complet de la base de donn&eacute;es ne peut pas &ecirc;tre divulgu&eacute;.</em>',
-    tech: ['C#', '.NET 9.0', 'WinUI', 'SQL Server (SSMS)', 'DataMax', 'Impression r&eacute;seau'],
-    category: 'Application bureau',
-    context: 'Maintenance &ndash; SKF Aeroengine France',
-    period: '2025 - 2026',
-    color: 'deep-ocean',
-    icon: 'mdi-printer-outline',
-    featured: false,
-    confidentialNote: 'Le mod&egrave;le complet de la base de donn&eacute;es ne peut pas &ecirc;tre divulgu&eacute; pour des raisons de confidentialit&eacute; avec SKF Aeroengine France.',
-    imageSections: [
-      {
-        title: 'Interface principale',
-        icon: 'mdi-monitor-outline',
-        images: [
-          '/projects/cebexv2/cebex_empty.png',
-          '/projects/cebexv2/cebex_of_rempli_censored.png'
-        ]
-      },
-      {
-        title: 'Gestion des erreurs',
-        icon: 'mdi-alert-circle-outline',
-        images: [
-          '/projects/cebexv2/dialog_erreur.png'
-        ]
-      },
-      {
-        title: 'Extraits de code',
-        icon: 'mdi-code-braces',
-        images: [
-          '/projects/cebexv2/snippet/fonction_of_ou_rma.png'
-        ]
-      }
-    ]
-  }
+  
 ]
 
 export { projects }
