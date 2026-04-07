@@ -417,8 +417,8 @@ const formations = [
   {
     period: '2024 - 2026',
     title: 'BTS SIO option SLAM',
-    place: 'Lyc&eacute;e &ndash; Valenciennes',
-    desc: 'Solutions Logicielles et Applications M&eacute;tiers &ndash; formation en alternance'
+    place: 'Lyc&eacute;e Henri Wallon &ndash; Valenciennes',
+    desc: 'Solutions Logicielles et Applications M&eacute;tiers &ndash; formation en alternance mixité en 2ème année uniquement'
   },
   {
     period: 'Oct. 2023 - Jui. 2024',
